@@ -7,15 +7,16 @@ let containerHtml = ''
 for (let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
     const tempContainerHtml = ` 
-        <div id="card">
-            <div class="card-img">
-                    <img src="${member.img}" alt="${member.name}">
+        <div class="card">
+        <div class="card-img-text">
+         <img src="${member.img}" alt="${member.name}">
+            
+            <div class"text">
+             <h3>${member.name}</h3>
+             <p>${member.role}</p>
+             <p>${member.email}</p>
             </div>
-            <div class="info">
-                    <h3>${member.name}</h3>
-                    <p>${member.role}</p>
-                    <p>${member.email}</p>
-            </div>
+         </div>
         </div>
     `
     containerHtml += tempContainerHtml
